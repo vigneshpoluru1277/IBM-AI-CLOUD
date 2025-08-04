@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multimodal AI Skin Condition Diagnosis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f5f8fa;
+    }
+    h1 {
+      color: #1a73e8;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .images {
+      display: flex;
+      gap: 20px;
+    }
+    .images img {
+      width: 45%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+    .response {
+      background: #fff;
+      padding: 15px;
+      border-left: 6px solid #1a73e8;
+      margin-bottom: 20px;
+    }
+    .model {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .graph img {
+      width: 100%;
+      max-width: 800px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Multimodal AI Skin Condition Diagnosis</h1>
+
+  <div class="section images">
+    <img src="https://hsc.unm.edu/medicine/departments/dermatology/_images/skin-atlas/acne/acne-type-iv.jpg" alt="Image 1 - Acne Type IV">
+    <img src="https://hsc.unm.edu/medicine/departments/dermatology/_images/skin-atlas/acne/acne-type-i.jpg" alt="Image 2 - Acne Type I">
+  </div>
+
+  <div class="section">
+    <h2>User Query</h2>
+    <p><strong>What kind of disease this person is having?</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>Model Responses</h2>
+
+    <div class="response">
+      <div class="model">Pixtral 12B – Image 1</div>
+      <div>The person in the image appears to have a severe skin condition, possibly a type of acne, psoriasis, or a severe allergic reaction, indicated by the presence of numerous red, inflamed bumps and lesions on their neck and back.</div>
+    </div>
+
+    <div class="response">
+      <div class="model">LLaMA 11B Vision – Image 1</div>
+      <div>The person in the image appears to be experiencing a skin condition characterized by the presence of acne, which is a common skin disease that occurs when pores on the skin become clogged with oil and dead skin cells.</div>
+    </div>
+
+    <div class="response">
+      <div class="model">Pixtral 12B – Image 2</div>
+      <div>The person in the image appears to be suffering from acne, as indicated by the presence of red bumps and pimples on their face.</div>
+    </div>
+
+    <div class="response">
+      <div class="model">LLaMA 11B Vision – Image 2</div>
+      <div>The person in the image appears to be experiencing acne, a common skin condition characterized by the occurrence of pimples, blackheads, and whiteheads.</div>
+    </div>
+  </div>
+
+  <div class="section graph">
+    <h2>Response Length Comparison (Graph)</h2>
+    <img src="model_response_lengths_graph.png" alt="Graph comparing model response lengths">
+  </div>
+
+</body>
+</html>
